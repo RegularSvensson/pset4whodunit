@@ -41,7 +41,18 @@ the file's FAT clusters to the computer's free clusters.
 It does not touch the actual data and the file isn't
 actually "deleted" and can simply be retrieved.
 
-5.  TODO
+5.  What can someone like you do to ensure 
+    (with high probability) that files you delete 
+    cannot be recovered?
+
+Three options:
+1) Physically destroying the drive so that it
+cannot be used.
+2) Degaussing the drive, randomizing the magnetic 
+domains, rendering the drive unusuable.
+3) Overwriting the data on the drive, rendering
+it unable to be recovered.
+
 6.  TODO
 7.  TODO
 8.  TODO
