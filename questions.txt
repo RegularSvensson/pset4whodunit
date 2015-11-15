@@ -35,7 +35,11 @@ PNG: Lossless
 4.  What happens, technically speaking, 
 when a file is deleted on a FAT file system?
 
-
+Two things. 1) The system changes the filename to
+signal that it has been deleted. 2) The system moves
+the file's FAT clusters to the computer's free clusters.
+It does not touch the actual data and the file isn't
+actually "deleted" and can simply be retrieved.
 
 5.  TODO
 6.  TODO
