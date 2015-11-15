@@ -96,6 +96,11 @@ and its origin is the upper-left corner.
 
 biBitCount = The number of bits-per-pixel.
 
+13. Why might fopen return NULL in copy.c:37?
+
+If completion of fopen() != successfull, NULL is returned
+and errno is set to indicate the error.
+
 14. TODO
 15. TODO
 16. TODO
