@@ -72,7 +72,15 @@ DWORD: 32 bits = 4 bytes
 LONG: 32 bits = 4 bytes
 WORD: 16 bits = 2 bytes
 
-9.  TODO
+9.  What (in ASCII, decimal, or hexadecimal) must the first two bytes 
+    of any BMP file be? (Leading bytes used to identify file
+    formats (with high probability) are generally called 
+    "magic numbers.)"
+
+Hexadecimal: 42 4d
+Decimal: (4 * 16^1 + 2 * 16^0) + (4 * 16^1 + 13  * 16^0) = 66 77
+ASCII: B M
+
 10. TODO
 11. TODO
 12. TODO
