@@ -101,7 +101,12 @@ biBitCount = The number of bits-per-pixel.
 If completion of fopen() != successfull, NULL is returned
 and errno is set to indicate the error.
 
-14. TODO
+14. Why is the third argument to fread always 1 in our code?
+
+The third argument is size_t nmemb. This is the number of elements,
+each one with a size of bytes. 
+We only read from one file, therefore the argument is always 1 in our code. 
+
 15. TODO
 16. TODO
 17. TODO
