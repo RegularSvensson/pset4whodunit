@@ -81,7 +81,11 @@ Hexadecimal: 42 4d
 Decimal: (4 * 16^1 + 2 * 16^0) + (4 * 16^1 + 13  * 16^0) = 66 77
 ASCII: B M
 
-10. TODO
+10. What’s the difference between bfSize and biSize?
+
+bfSize: The size, in bytes, of the bitmap file.
+biSize: The number of bytes required by the structure.
+
 11. TODO
 12. TODO
 13. TODO
