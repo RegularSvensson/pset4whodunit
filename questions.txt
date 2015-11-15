@@ -122,5 +122,9 @@ stream = The pointer to a file object that identifies the stream.
 offset = The number of bytes to offset from whence.
 whence = The position from where offset is added.
 
-17. TODO
+17. What is SEEK_CUR?
+
+This is the specified constant for whence. It is the current position of
+the file pointer.
+
 18. TODO
