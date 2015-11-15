@@ -115,6 +115,12 @@ sizeof(RGBTRIPLE) = 3
 padding = (4 - (3 * 3) % 4) % 4 = (4 - 1) % 4 = 3 % 4 = 3
 padding = 3
 
-16. TODO
+16. What does fseek do?
+
+The fseek() function sets the file position of the stream to the given offset.
+stream = The pointer to a file object that identifies the stream.
+offset = The number of bytes to offset from whence.
+whence = The position from where offset is added.
+
 17. TODO
 18. TODO
