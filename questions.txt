@@ -65,7 +65,7 @@ They specify Unicode Transformation Format, coded with
 a specific number of bits.
 
 8.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively? 
-(Assume a 32-bit architecture like the CS50 Appliance.)
+    (Assume a 32-bit architecture like the CS50 Appliance.)
 
 BYTE: 8 bits = 1 byte
 DWORD: 32 bits = 4 bytes
