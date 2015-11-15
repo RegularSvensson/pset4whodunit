@@ -64,7 +64,14 @@ specifies data types, with min and max allowed values for each type.
 They specify Unicode Transformation Format, coded with
 a specific number of bits.
 
-8.  TODO
+8.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively? 
+(Assume a 32-bit architecture like the CS50 Appliance.)
+
+BYTE: 8 bits = 1 byte
+DWORD: 32 bits = 4 bytes
+LONG: 32 bits = 4 bytes
+WORD: 16 bits = 2 bytes
+
 9.  TODO
 10. TODO
 11. TODO
