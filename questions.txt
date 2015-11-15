@@ -9,7 +9,22 @@ PNG: 64 Bits per pixel, 2^64 colors.
 
 GIF
 
-2.  TODO
+2.  What’s the difference between 
+    lossy and lossless compression?
+
+Lossy compression is a class of data compression
+methods that that uses inexact approximations
+(or partial data discarding) to represent the content.
+It does this to produce a smaller compressed file.
+Example: A high resolution image -> "pixel-y" image.
+
+Lossless compression is a class of data 
+compression algorithms that allows 
+the original data to be perfectly 
+reconstructed from the compressed data. 
+This requires bigger compressed files.
+Example: A high resolution image -> still "sharp" image.
+
 3.  TODO
 4.  TODO
 5.  TODO
