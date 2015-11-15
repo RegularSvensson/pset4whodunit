@@ -5,10 +5,7 @@ GIF: 8 Bits per pixel, 2^8 colors.
 JPEG: 24 Bits per pixel, 2^24 colors.
 PNG: 64 Bits per pixel, 2^64 colors.
 
-1.  Which of the formats supports animation?
-
-GIF
-
+1.  TODO
 2.  TODO
 3.  TODO
 4.  TODO
