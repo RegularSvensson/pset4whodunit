@@ -53,7 +53,11 @@ domains, rendering the drive unusuable.
 3) Overwriting the data on the drive, rendering
 it unable to be recovered.
 
-6.  TODO
+6.  What’s stdint.h?
+
+stdint.h is a header file. It provides a set of typedefs that
+specifies data types, with min and max allowed values for each type.
+
 7.  TODO
 8.  TODO
 9.  TODO
