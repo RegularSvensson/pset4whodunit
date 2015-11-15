@@ -58,7 +58,12 @@ it unable to be recovered.
 stdint.h is a header file. It provides a set of typedefs that
 specifies data types, with min and max allowed values for each type.
 
-7.  TODO
+7.  What’s the point of using uint8_t, uint32_t, int32_t, 
+    and uint16_t in a program?
+
+They specify Unicode Transformation Format, coded with
+a specific number of bits.
+
 8.  TODO
 9.  TODO
 10. TODO
