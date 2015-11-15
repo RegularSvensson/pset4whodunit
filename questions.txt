@@ -25,8 +25,18 @@ reconstructed from the compressed data.
 This requires bigger compressed files.
 Example: A high resolution image -> still "sharp" image.
 
-3.  TODO
-4.  TODO
+3.  Which of these formats is lossy-compressed?
+
+BMP:  Lossless
+GIF: Lossless
+JPEG: Lossy 
+PNG: Lossless
+
+4.  What happens, technically speaking, 
+when a file is deleted on a FAT file system?
+
+
+
 5.  TODO
 6.  TODO
 7.  TODO
