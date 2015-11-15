@@ -33,7 +33,7 @@ JPEG: Lossy
 PNG: Lossless
 
 4.  What happens, technically speaking, 
-when a file is deleted on a FAT file system?
+    when a file is deleted on a FAT file system?
 
 Two things. 1) The system changes the filename to
 signal that it has been deleted. 2) The system moves
