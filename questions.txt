@@ -107,7 +107,14 @@ The third argument is size_t nmemb. This is the number of elements,
 each one with a size of bytes. 
 We only read from one file, therefore the argument is always 1 in our code. 
 
-15. TODO
+15. What value does copy.c:70 assign padding if bi.biWidth is 3?
+
+padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
+bi.biWidth = 3
+sizeof(RGBTRIPLE) = 3
+padding = (4 - (3 * 3) % 4) % 4 = (4 - 1) % 4 = 3 % 4 = 3
+padding = 3
+
 16. TODO
 17. TODO
 18. TODO
