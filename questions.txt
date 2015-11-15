@@ -86,7 +86,11 @@ ASCII: B M
 bfSize: The size, in bytes, of the bitmap file.
 biSize: The number of bytes required by the structure.
 
-11. TODO
+11. What does it mean if biHeight is negative?
+
+If biHeight is negative, the bitmap is a top-down DIB
+and its origin is the upper-left corner.
+
 12. TODO
 13. TODO
 14. TODO
