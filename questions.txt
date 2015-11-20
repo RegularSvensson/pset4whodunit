@@ -1,19 +1,130 @@
-0.  TODO
-1.  TODO
-2.  TODO
-3.  TODO
-4.  TODO
-5.  TODO
-6.  TODO
-7.  TODO
-8.  TODO
-9.  TODO
-10. TODO
-11. TODO
-12. TODO
-13. TODO
-14. TODO
-15. TODO
-16. TODO
-17. TODO
+0.  How many different colors does each format support?
+
+BMP: 64 Bits per pixel, 2^64 colors.
+GIF: 8 Bits per pixel, 2^8 colors.
+JPEG: 24 Bits per pixel, 2^24 colors.
+PNG: 64 Bits per pixel, 2^64 colors.
+
+1.  Which of the formats supports animation?
+
+GIF
+
+2.  What’s the difference between 
+    lossy and lossless compression?
+
+Lossy compression is a class of data compression
+methods that that uses inexact approximations
+(or partial data discarding) to represent the content.
+It does this to produce a smaller compressed file.
+Example: A high resolution image -> "pixel-y" image.
+
+Lossless compression is a class of data 
+compression algorithms that allows 
+the original data to be perfectly 
+reconstructed from the compressed data. 
+This requires bigger compressed files.
+Example: A high resolution image -> still "sharp" image.
+
+3.  Which of these formats is lossy-compressed?
+
+BMP:  Lossless
+GIF: Lossless
+JPEG: Lossy 
+PNG: Lossless
+
+4.  What happens, technically speaking, 
+    when a file is deleted on a FAT file system?
+
+Two things. 1) The system changes the filename to
+signal that it has been deleted. 2) The system moves
+the file's FAT clusters to the computer's free clusters.
+It does not touch the actual data and the file isn't
+actually "deleted" and can simply be retrieved.
+
+5.  What can someone like you do to ensure 
+    (with high probability) that files you delete 
+    cannot be recovered?
+
+Three options:
+1) Physically destroying the drive so that it
+cannot be used.
+2) Degaussing the drive, randomizing the magnetic 
+domains, rendering the drive unusuable.
+3) Overwriting the data on the drive, rendering
+it unable to be recovered.
+
+6.  What’s stdint.h?
+
+stdint.h is a header file. It provides a set of typedefs that
+specifies data types, with min and max allowed values for each type.
+
+7.  What’s the point of using uint8_t, uint32_t, int32_t, 
+    and uint16_t in a program?
+
+They specify Unicode Transformation Format, coded with
+a specific number of bits.
+
+8.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively? 
+    (Assume a 32-bit architecture like the CS50 Appliance.)
+
+BYTE: 8 bits = 1 byte
+DWORD: 32 bits = 4 bytes
+LONG: 32 bits = 4 bytes
+WORD: 16 bits = 2 bytes
+
+9.  What (in ASCII, decimal, or hexadecimal) must the first two bytes 
+    of any BMP file be? (Leading bytes used to identify file
+    formats (with high probability) are generally called 
+    "magic numbers.)"
+
+Hexadecimal: 42 4d
+Decimal: (4 * 16^1 + 2 * 16^0) + (4 * 16^1 + 13  * 16^0) = 66 77
+ASCII: B M
+
+10. What’s the difference between bfSize and biSize?
+
+bfSize: The size, in bytes, of the bitmap file.
+biSize: The number of bytes required by the structure.
+
+11. What does it mean if biHeight is negative?
+
+If biHeight is negative, the bitmap is a top-down DIB
+and its origin is the upper-left corner.
+
+12. What field in BITMAPINFOHEADER specifies the BMP’s 
+    color depth (i.e., bits per pixel)?
+
+biBitCount = The number of bits-per-pixel.
+
+13. Why might fopen return NULL in copy.c:37?
+
+If completion of fopen() != successfull, NULL is returned
+and errno is set to indicate the error.
+
+14. Why is the third argument to fread always 1 in our code?
+
+The third argument is size_t nmemb. This is the number of elements,
+each one with a size of bytes. 
+We only read from one file, therefore the argument is always 1 in our code. 
+
+15. What value does copy.c:70 assign padding if bi.biWidth is 3?
+
+padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
+bi.biWidth = 3
+sizeof(RGBTRIPLE) = 3
+padding = (4 - (3 * 3) % 4) % 4 = (4 - 1) % 4 = 3 % 4 = 3
+padding = 3
+
+16. What does fseek do?
+
+The fseek() function sets the file position of the stream to the given offset.
+stream = The pointer to a file object that identifies the stream.
+offset = The number of bytes to offset from whence.
+whence = The position from where offset is added.
+
+17. What is SEEK_CUR?
+
+This is the specified constant for whence. It is the current position of
+the file pointer.
+
 18. TODO
